@@ -1,6 +1,13 @@
+using Microsoft.EntityFrameworkCore;
 using trilha_net_minimals_api.Dominio.DTOs;
+using trilha_net_minimals_api.Infraestrutura;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<DbContexto>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("sqlServer"))
+);
+
 var app = builder.Build();
 
 app.MapGet("/", () => "Hello World!");
