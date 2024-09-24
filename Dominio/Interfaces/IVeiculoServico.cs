@@ -9,7 +9,7 @@ namespace trilha_net_minimals_api.Infraestrutura
 {
     public interface IVeiculoServico
     {
-        List<Veiculo> Todos(int page = 1, string? nome = null, string? marca = null);
+        List<Veiculo> Todos(int? page = 1, string? nome = null, string? marca = null);
 
         Veiculo? BuscaPorId(int id);
 

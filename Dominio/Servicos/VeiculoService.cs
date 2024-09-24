@@ -41,7 +41,7 @@ namespace trilha_net_minimals_api.Dominio.Servicos
             _contexto.SaveChanges();
         }
 
-        public List<Veiculo> Todos(int page = 1, string? nome = null, string? marca = null)
+        public List<Veiculo> Todos(int? page = 1, string? nome = null, string? marca = null)
         {
            var query =  _contexto.Veiculos.AsQueryable();
 
@@ -54,8 +54,11 @@ namespace trilha_net_minimals_api.Dominio.Servicos
            }
 
            int itensPorPagina = 10;
+           
+           if(page != null){
+                query = query.Skip(((int)page - 1) * itensPorPagina).Take(itensPorPagina);
+           }
 
-           query = query.Skip((page - 1) * itensPorPagina).Take(itensPorPagina);
 
            return query.ToList();         
         }
