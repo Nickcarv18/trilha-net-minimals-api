@@ -19,6 +19,7 @@ namespace trilha_net_minimals_api.Infraestrutura
         }
 
         public DbSet<Administrador> Administradores { get; set; }
+        public DbSet<Veiculo> Veiculos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
