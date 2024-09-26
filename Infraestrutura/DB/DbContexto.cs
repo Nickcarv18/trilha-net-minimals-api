@@ -36,7 +36,7 @@ namespace trilha_net_minimals_api.Infraestrutura
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if(!optionsBuilder.IsConfigured){
-                var stringConexao = _configurationAppSettings.GetConnectionString("sqlServer");
+                var stringConexao = _configurationAppSettings.GetConnectionString("SqlServer");
 
                 if(!string.IsNullOrEmpty(stringConexao)){
                     optionsBuilder.UseSqlServer(stringConexao);
