@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "trilha-net-minimals-api", "trilha-net-minimals-api.csproj", "{2899654E-BD68-4337-9A68-AAD610C7C46B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "trilha-net-minimals-api", "Api\trilha-net-minimals-api.csproj", "{2899654E-BD68-4337-9A68-AAD610C7C46B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{9F7F1E1A-A96D-41CE-92F8-0C730CE222A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2899654E-BD68-4337-9A68-AAD610C7C46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2899654E-BD68-4337-9A68-AAD610C7C46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2899654E-BD68-4337-9A68-AAD610C7C46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7F1E1A-A96D-41CE-92F8-0C730CE222A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7F1E1A-A96D-41CE-92F8-0C730CE222A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7F1E1A-A96D-41CE-92F8-0C730CE222A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7F1E1A-A96D-41CE-92F8-0C730CE222A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
