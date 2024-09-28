@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using trilha_net_minimals_api.Dominio.DTOs;
 using trilha_net_minimals_api.Dominio.Entidades;
 using trilha_net_minimals_api.Infraestrutura;
 
