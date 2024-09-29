@@ -13,10 +13,12 @@ namespace trilha_net_minimals_api.Dominio.Servicos
             _contexto = contexto;
         }
 
-        public void Incluir(Administrador administrador)
+        public Administrador Incluir(Administrador administrador)
         {
             _contexto.Administradores.Add(administrador);
             _contexto.SaveChanges();
+
+            return administrador;
         }
 
         public Administrador? Login(LoginDTO loginDTO)

@@ -8,9 +8,9 @@ namespace trilha_net_minimals_api.Infraestrutura
 
         Veiculo? BuscaPorId(int id);
 
-        void Incluir(Veiculo veiculo);
+        Veiculo Incluir(Veiculo veiculo);
 
-        void Atualizar(Veiculo veiculo);
+        Veiculo Atualizar(Veiculo veiculo);
 
         void Apagar(Veiculo veiculo);
     }
